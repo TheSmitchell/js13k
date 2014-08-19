@@ -15,8 +15,8 @@ body {
   margin: 0 auto;
   width: 32rem;
   height: 48rem;
-  position:relative;
-  display:block;
+  position: relative;
+  display: block;
   border: 1px grey solid;
 }
 
@@ -27,4 +27,32 @@ body {
   position: absolute;
   bottom: 0;
   background-color: grey;
+}
+
+.jump {
+  animation: jump 200ms 1;
+}
+
+.rjump {
+  animation: rjump 200ms 1;
+}
+
+@keyframes jump {
+  0% {
+    transform: translate3d(0,0,0);
+  }
+  50% {
+    transform: translate3d(0.5rem,-1rem,0);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translate3d(1rem,0,0);
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes rjump {
+  0% { transform: traslate3d(0,0,0); }
+  50% { transform: translate3d(-0.5rem,-1rem,0); animation-timing-function:ease-in; }
+  100% { transform: translate3d(-1rem,0,0); animation-timing-function:ease-out;}
 }
