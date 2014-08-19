@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+}
+
+#world {
+  margin: 0 auto;
+  width: 32rem;
+  height: 48rem;
+  position:relative;
+  display:block;
+  border: 1px grey solid;
+}
+
+#cat {
+  height: 1rem;
+  width: 1rem;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background-color: grey;
+}
